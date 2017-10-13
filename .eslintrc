@@ -1,7 +1,6 @@
 {
     "env": {
-        "browser": true,
-        "jest": true
+        "browser": true
     },
     "plugins": [
         "html"
@@ -10,23 +9,6 @@
     "parserOptions": {
         "ecmaVersion": 2017,
         "sourceType": "module"
-    },
-    "globals": {
-        "$": true,
-        "jQuery": true,
-        "google": true,
-        "googletag": true,
-        "_": true,
-        "WRI": true,
-        "HwReg": true,
-        "s": true,
-        "translate": true,
-        "wNumb": true,
-        "Set": true,
-        "moment": true,
-        "Promise": true,
-        "_gaq": true,
-        "process": true
     },
     "extends": "standard",
     "rules": {
