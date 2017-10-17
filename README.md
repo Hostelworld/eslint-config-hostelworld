@@ -7,8 +7,9 @@
 [downloads-image]: https://img.shields.io/npm/dm/eslint-config-hostelworld.svg
 [downloads-url]: https://npmjs.org/package/eslint-config-hostelworld
 
-This package provides Hostelworld's .eslintrc as an extensible shared config. It is created on top of [`standard`](https://github.com/standard/eslint-config-hostelworld)
-with a few changes.
+> The Hostelworld shareable config for [eslint](https://eslint.org/).
+
+Extends [`eslint-config-standard`](https://github.com/standard/eslint-config-standard).
 
 
 ## Installation
