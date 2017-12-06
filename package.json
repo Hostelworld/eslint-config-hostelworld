@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-hostelworld",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Hostelworld javascript style rules",
     "main": "index.js",
     "scripts": {
