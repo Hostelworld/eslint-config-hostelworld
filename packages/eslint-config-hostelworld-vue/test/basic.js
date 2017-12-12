@@ -10,7 +10,3 @@ test('test basic properties of config', function (t) {
 function isObject (obj) {
     return typeof obj === 'object' && obj !== null;
 }
-
-function isArray (arr) {
-    return typeof str === 'string' && str !== null;
-}
