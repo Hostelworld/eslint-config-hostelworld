@@ -1,7 +1,7 @@
 {
-    "name": "eslint-config-hostelworld",
-    "version": "0.2.0",
-    "description": "Hostelworld javascript style rules",
+    "name": "hostelworld-javascript-style",
+    "version": "0.3.0",
+    "description": "Hostelworld JavaScript style rules",
     "main": "index.js",
     "scripts": {
         "preinstall": "npm run install:base && npm run install:vue",
@@ -25,10 +25,10 @@
     ],
     "author": "Ignacio Velazquez <ivelazquez85@gmail.com>",
     "contributors": [
-      {
-        "name": "Maxence POUTORD",
-        "url": "https://twitter.com/_maxpou"
-      }
+        {
+            "name": "Maxence POUTORD",
+            "url": "https://twitter.com/_maxpou"
+        }
     ],
     "license": "MIT",
     "bugs": {
