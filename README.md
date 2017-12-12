@@ -8,7 +8,7 @@
 
 ## Standards
 
-* [eslint-config-hostelworld-base](./packages/eslint-config-hostelworld-base/README.md)
+* [eslint-config-hostelworld](./packages/eslint-config-hostelworld/README.md)
 * [eslint-config-hostelworld-vue](./packages/eslint-config-hostelworld-vue/README.md)
 
 ## License

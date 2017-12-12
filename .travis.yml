@@ -22,5 +22,5 @@ script:
 
 env:
   matrix:
-    - 'PACKAGE=eslint-config-hostelworld-base'
+    - 'PACKAGE=eslint-config-hostelworld'
     - 'PACKAGE=eslint-config-hostelworld-vue'

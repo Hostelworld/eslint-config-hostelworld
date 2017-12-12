@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-hostelworld-base",
+  "name": "eslint-config-hostelworld",
   "version": "1.0.0",
-  "description": "Hostelworld ESLint config - Base",
+  "description": "Hostelworld ESLint config",
   "main": "index.js",
   "scripts": {
     "test": "tape test/*.js",

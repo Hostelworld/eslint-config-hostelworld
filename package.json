@@ -5,13 +5,13 @@
     "main": "index.js",
     "scripts": {
         "preinstall": "npm run install:base && npm run install:vue",
-        "install:base": "cd packages/eslint-config-hostelworld-base && npm prune && npm install",
+        "install:base": "cd packages/eslint-config-hostelworld && npm prune && npm install",
         "install:vue": "cd packages/eslint-config-hostelworld-vue && npm prune && npm install",
         "lint": "npm run lint:base && npm run lint:vue",
-        "lint:base": "cd packages/eslint-config-hostelworld-base && npm run lint",
+        "lint:base": "cd packages/eslint-config-hostelworld && npm run lint",
         "lint:vue": "cd packages/eslint-config-hostelworld-vue && npm run lint",
         "test": "npm run test:base && npm run test:vue",
-        "test:base": "cd packages/eslint-config-hostelworld-base && npm test",
+        "test:base": "cd packages/eslint-config-hostelworld && npm test",
         "test:vue": "cd packages/eslint-config-hostelworld-vue && npm test"
     },
     "repository": {
