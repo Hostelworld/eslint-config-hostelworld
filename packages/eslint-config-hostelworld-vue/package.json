@@ -1,0 +1,51 @@
+{
+  "name": "eslint-config-hostelworld-vue",
+  "version": "1.0.0",
+  "description": "Hostelworld ESLint config - Vue.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js",
+    "lint": "eslint --report-unused-disable-directives .",
+    "pretravis": "cd ../eslint-config-hostelworld-base && npm install && npm link && cd - && npm link --no-save eslint-config-hostelworld-base",
+    "posttravis": "npm unlink --no-save eslint-config-hostelworld-base >/dev/null &"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hostelworld/eslint-config-hostelworld"
+  },
+  "keywords": [
+    "styleguide",
+    "eslint",
+    "eslintconfig",
+    "vue",
+    "vuejs"
+  ],
+  "author": "Maxence POUTORD <maxence.poutord@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hostelworld/eslint-config-hostelworld/issues"
+  },
+  "homepage": "https://github.com/Hostelworld/eslint-config-hostelworld#readme",
+  "dependencies": {
+    "eslint": "^4.13.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "^4.0.0-beta.2"
+  },
+  "devDependencies": {
+    "eslint-find-rules": "^3.1.1",
+    "tape": "^4.8.0"
+  },
+  "peerDependencies": {
+    "eslint": ">= 4.8.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "^4.0.0-beta.2"
+  }
+}

@@ -6,29 +6,10 @@
 
 > The Hostelworld shareable config for [eslint](https://eslint.org/).
 
-Extends [`eslint-config-standard`](https://github.com/standard/eslint-config-standard).
+## Standards
 
-
-## Installation
-
-First install the following npm package:
-
-```bash
-npm install --save-dev eslint-config-hostelworld
-```
-
-Then add `eslint-config-hostelworld` to your `.eslintrc.*` **extends** section:
-
-```js
-{
-  "extends": [
-      "hostelworld"
-  ],
-  "rules": {
-      // Additional, per-project rules or overrides...
-  }
-}
-```
+* [eslint-config-hostelworld-base](./packages/eslint-config-hostelworld-base/README.md)
+* [eslint-config-hostelworld-vue](./packages/eslint-config-hostelworld-vue/README.md)
 
 ## License
 

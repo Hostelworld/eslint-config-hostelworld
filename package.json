@@ -4,44 +4,35 @@
     "description": "Hostelworld javascript style rules",
     "main": "index.js",
     "scripts": {
-        "test": "mocha --require babel-register"
+        "preinstall": "npm run install:base && npm run install:vue",
+        "install:base": "cd packages/eslint-config-hostelworld-base && npm prune && npm install",
+        "install:vue": "cd packages/eslint-config-hostelworld-vue && npm prune && npm install",
+        "lint": "npm run lint:base && npm run lint:vue",
+        "lint:base": "cd packages/eslint-config-hostelworld-base && npm run lint",
+        "lint:vue": "cd packages/eslint-config-hostelworld-vue && npm run lint",
+        "test": "npm run test:base && npm run test:vue",
+        "test:base": "cd packages/eslint-config-hostelworld-base && npm test",
+        "test:vue": "cd packages/eslint-config-hostelworld-vue && npm test"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Hostelworld/eslint-config-hostelworld.git"
+        "url": "https://github.com/Hostelworld/eslint-config-hostelworld"
     },
     "keywords": [
-        "style",
-        "guide",
-        "lint",
-        "es2015",
+        "styleguide",
         "eslint",
         "eslintconfig"
     ],
     "author": "Ignacio Velazquez <ivelazquez85@gmail.com>",
+    "contributors": [
+      {
+        "name": "Maxence POUTORD",
+        "url": "https://twitter.com/_maxpou"
+      }
+    ],
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/Hostelworld/eslint-config-hostelworld/issues"
     },
-    "homepage": "https://github.com/Hostelworld/eslint-config-hostelworld#readme",
-    "dependencies": {
-        "babel-eslint": "^8.0.1",
-        "eslint": "^4.8.0",
-        "eslint-config-standard": "^10.2.1",
-        "eslint-plugin-html": "^3.2.2",
-        "eslint-plugin-import": "^2.7.0",
-        "eslint-plugin-node": "^5.2.0",
-        "eslint-plugin-promise": "^3.5.0",
-        "eslint-plugin-standard": "^3.0.1"
-    },
-    "devDependencies": {
-        "babel-core": "^6.26.0",
-        "babel-preset-es2015": "^6.24.1",
-        "babel-register": "^6.26.0",
-        "chai": "^4.1.2",
-        "mocha": "^4.0.1"
-    },
-    "peerDependencies": {
-        "eslint": ">= 4.8.0"
-    }
+    "homepage": "https://github.com/Hostelworld/eslint-config-hostelworld#readme"
 }
