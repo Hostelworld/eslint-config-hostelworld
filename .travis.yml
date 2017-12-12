@@ -12,10 +12,10 @@ before_install:
 
 install:
   - 'if [ -n "${PACKAGE-}" ]; then cd "packages/${PACKAGE}"; fi'
+  - 'npm run pretravis'
   - 'if [ "${TRAVIS_NODE_VERSION}" = "0.9" ]; then nvm install --latest-npm 0.8 && npm install && nvm use "${TRAVIS_NODE_VERSION}"; else npm install; fi;'
 
 script:
- - 'npm run pretravis'
  - 'npm run lint'
  - 'npm test'
  - 'npm run posttravis'
