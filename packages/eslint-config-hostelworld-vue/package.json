@@ -26,6 +26,9 @@
     "url": "https://github.com/Hostelworld/eslint-config-hostelworld/issues"
   },
   "homepage": "https://github.com/Hostelworld/eslint-config-hostelworld/packages/eslint-config-hostelworld-vue#readme",
+  "dependencies": {
+    "eslint-config-hostelworld": "^1.0.x"
+  },
   "devDependencies": {
     "eslint": "^4.13.0",
     "eslint-config-standard": "^10.2.1",

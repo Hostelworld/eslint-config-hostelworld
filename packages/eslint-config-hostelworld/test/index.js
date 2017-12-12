@@ -5,7 +5,7 @@ test('load config in eslint to validate all rule syntax is correct', function (t
     const CLIEngine = eslint.CLIEngine;
 
     const cli = new CLIEngine({
-        configFile: '.eslintrc'
+        configFile: '.eslintrc.js'
     });
 
     const code = 'var foo = 1;\nvar bar = function () {};\nbar(foo);\n';

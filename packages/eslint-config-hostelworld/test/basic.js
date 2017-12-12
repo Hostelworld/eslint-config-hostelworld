@@ -1,4 +1,4 @@
-var config = require('../');
+var config = require('../.eslintrc');
 var test = require('tape');
 
 test('test basic properties of config', function (t) {
