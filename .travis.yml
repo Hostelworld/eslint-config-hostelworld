@@ -18,9 +18,9 @@ script:
  - 'npm run pretravis'
  - 'npm run lint'
  - 'npm test'
- - 'posttravis'
+ - 'npm run posttravis'
 
 env:
   matrix:
-    - 'TEST=true PACKAGE=eslint-config-hostelworld-base'
-    - 'TEST=true PACKAGE=eslint-config-hostelworld-vue'
+    - 'PACKAGE=eslint-config-hostelworld-base'
+    - 'PACKAGE=eslint-config-hostelworld-vue'
