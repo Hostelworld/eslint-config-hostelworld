@@ -1,0 +1,45 @@
+{
+  "name": "eslint-config-hostelworld",
+  "version": "1.0.0",
+  "description": "Hostelworld ESLint config",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js",
+    "lint": "eslint --report-unused-disable-directives .",
+    "pretravis": ":",
+    "posttravis": ":"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hostelworld/eslint-config-hostelworld"
+  },
+  "keywords": [
+    "styleguide",
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "Maxence POUTORD <maxence.poutord@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hostelworld/eslint-config-hostelworld/issues"
+  },
+  "homepage": "https://github.com/Hostelworld/eslint-config-hostelworld/packages/eslint-config-hostelworld#readme",
+  "devDependencies": {
+    "eslint": "^4.13.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-find-rules": "^3.1.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "tape": "^4.8.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=4.12.1",
+    "eslint-config-standard": ">=10.2.0",
+    "eslint-plugin-import": ">=2.2.0",
+    "eslint-plugin-node": ">=5.2.1",
+    "eslint-plugin-promise": ">=3.5.0",
+    "eslint-plugin-standard": ">=3.0.0"
+  }
+}

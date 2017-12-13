@@ -1,7 +1,26 @@
+sudo: false
+
 language: node_js
+
+# https://docs.travis-ci.com/user/languages/javascript-with-nodejs/#Specifying-Node.js-versions-using-.nvmrc
 node_js:
+  - '9'
   - '8'
-  - '7'
-  - '6'
-  - '5'
-  - '4'
+
+before_install:
+  - 'nvm install-latest-npm'
+
+install:
+  - 'if [ -n "${PACKAGE-}" ]; then cd "packages/${PACKAGE}"; fi'
+  - 'npm run pretravis'
+  - 'if [ "${TRAVIS_NODE_VERSION}" = "0.9" ]; then nvm install --latest-npm 0.8 && npm install && nvm use "${TRAVIS_NODE_VERSION}"; else npm install; fi;'
+
+script:
+ - 'npm run lint'
+ - 'npm test'
+ - 'npm run posttravis'
+
+env:
+  matrix:
+    - 'PACKAGE=eslint-config-hostelworld'
+    - 'PACKAGE=eslint-config-hostelworld-vue'
