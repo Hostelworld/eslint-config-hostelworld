@@ -8,8 +8,10 @@
 
 ## Standards
 
-* [eslint-config-hostelworld](./packages/eslint-config-hostelworld/README.md)
-* [eslint-config-hostelworld-vue](./packages/eslint-config-hostelworld-vue/README.md)
+There is two configuration package:
+
+* [eslint-config-hostelworld](./packages/eslint-config-hostelworld/README.md): This package provide Hostelworld's eslintrc.js (without Vue.js)
+* [eslint-config-hostelworld-vue](./packages/eslint-config-hostelworld-vue/README.md): This package provide Hostelworld's eslintrc.js (including standards for JavaScript)
 
 ## License
 
