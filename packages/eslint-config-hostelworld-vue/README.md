@@ -9,7 +9,7 @@ Extends [`eslint-config-standard`](https://github.com/standard/eslint-config-sta
     # core package
     npm install --save-dev eslint-config-hostelworld-vue
     # plus the peer dependencies
-    npm install --save-dev eslint eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard eslint-config-hostelworld eslint-plugin-vue@next
+    npm install --save-dev babel-eslint eslint eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard eslint-config-hostelworld eslint-plugin-vue@next
     ```
 
 2. Then add `eslint-config-hostelworld-vue` to your `.eslintrc.*` **extends** section:
