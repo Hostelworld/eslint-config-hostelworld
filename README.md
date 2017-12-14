@@ -29,3 +29,17 @@ ESLint Shareable Config extending [`eslint-config-standard`](https://github.com/
         }
     }
     ```
+
+## Additional rules
+
++ **4 spaces** for indentation. [rule](https://eslint.org/docs/rules/indent)
++ **Semicolons** are mandatory. [rule](https://eslint.org/docs/rules/semi)
++ **Curly braces** always required, even in one liners. [rule](https://eslint.org/docs/rules/curly)
+
+## License
+
+This library is open-sourced software licensed under the [MIT license](LICENSE).
+
+## Authors
+
+[Hostelworld Team](https://hostelworld.com)
