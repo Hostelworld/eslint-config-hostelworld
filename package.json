@@ -1,38 +1,43 @@
 {
-    "name": "hostelworld-javascript-style",
-    "version": "0.3.0",
-    "description": "Hostelworld JavaScript style rules",
-    "main": "index.js",
-    "scripts": {
-        "preinstall": "npm run install:base && npm run install:vue",
-        "install:base": "cd packages/eslint-config-hostelworld && npm prune && npm install",
-        "install:vue": "cd packages/eslint-config-hostelworld-vue && npm prune && npm install",
-        "lint": "npm run lint:base && npm run lint:vue",
-        "lint:base": "cd packages/eslint-config-hostelworld && npm run lint",
-        "lint:vue": "cd packages/eslint-config-hostelworld-vue && npm run lint",
-        "test": "npm run test:base && npm run test:vue",
-        "test:base": "cd packages/eslint-config-hostelworld && npm test",
-        "test:vue": "cd packages/eslint-config-hostelworld-vue && npm test"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Hostelworld/eslint-config-hostelworld"
-    },
-    "keywords": [
-        "styleguide",
-        "eslint",
-        "eslintconfig"
-    ],
-    "author": "Ignacio Velazquez <ivelazquez85@gmail.com>",
-    "contributors": [
-        {
-            "name": "Maxence POUTORD",
-            "url": "https://twitter.com/_maxpou"
-        }
-    ],
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/Hostelworld/eslint-config-hostelworld/issues"
-    },
-    "homepage": "https://github.com/Hostelworld/eslint-config-hostelworld#readme"
+  "name": "eslint-config-hostelworld",
+  "version": "1.2.0",
+  "description": "Hostelworld ESLint Shareable Config",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js",
+    "lint": "eslint --report-unused-disable-directives ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hostelworld/eslint-config-hostelworld"
+  },
+  "keywords": [
+    "styleguide",
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "Maxence POUTORD <maxence.poutord@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hostelworld/eslint-config-hostelworld/issues"
+  },
+  "homepage": "https://github.com/Hostelworld/eslint-config-hostelworld#readme",
+  "devDependencies": {
+    "eslint": "^4.13.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-find-rules": "^3.1.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "tape": "^4.8.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=4.12.1",
+    "eslint-config-standard": ">=10.2.0",
+    "eslint-plugin-import": ">=2.2.0",
+    "eslint-plugin-node": ">=5.2.1",
+    "eslint-plugin-promise": ">=3.5.0",
+    "eslint-plugin-standard": ">=3.0.0"
+  }
 }
